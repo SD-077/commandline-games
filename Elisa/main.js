@@ -50,6 +50,6 @@ if (playerChoice === computerChoice) {
                 break
         }
     }
-
+        // console log to show what was selected and the outcome of the game 
         console.log(`You chose ${process.argv[2].toLowerCase()} and Computer chose ${computerChoice}. The result is: ${result}`) 
 
