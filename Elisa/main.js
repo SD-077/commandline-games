@@ -45,6 +45,9 @@ if (playerChoice === computerChoice) {
                     result = "Computer wins!";
                 }
                 break;
+            default:
+                result = "Invalid word entered - please type rock, paper or scissors.";
+                break
         }
     }
 
