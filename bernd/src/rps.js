@@ -75,6 +75,6 @@ if(usersChoice === computersChoiseAsString) {
 
 console.log("Algorithm 3: " + result);
 
-// now some intelligent algorithm should follow!
+// now some intelligent algorithm should be follow!
 console.log("No intelligent algorithm found!");
 // thats it for me :p
