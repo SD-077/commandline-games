@@ -13,7 +13,7 @@ if (!isValid) {
 }
 // Randomly generate the computer's move
 const randomIndex = Math.floor(Math.random () * moves.length);
-const computerMove = moves[randonIndex];
+const computerMove = moves[randomIndex];
 //Object storing what each move beats
 const beats ={
     rock : 'scissors',
