@@ -15,35 +15,38 @@ let randomNumber = Math.floor(Math.random() * 3);
 let computerChoice = options[randomNumber];
 
 //switch statement with if/else to compare player and computer input 
+let result; 
 if (playerChoice === computerChoice) {
-    console.log("It's a tie!");
+    result = ("It's a tie!");
     }
     else {
         switch (playerChoice) {
             case "paper":
                 if (computerChoice === "rock") {
-                    console.log("You win!");
+                    result = "You win!";
                 }
                 else { 
-                    console.log("Computer wins!");
+                    result = "Computer wins!";
                 }
                 break;
             case "rock":
                 if (computerChoice === "scissors"){
-                    console.log("You win!");
+                    result = "You win!";
                 }
                 else {
-                    console.log("Computer wins!");
+                    result = "Computer wins!";
                 }
                 break;
             case "scissors":
                 if (computerChoice === "paper") {
-                    console.log("You win!");
+                    result = "You win!";
                 }
                 else {
-                    console.log("Computer wins!");
+                    result = "Computer wins!";
                 }
                 break;
         }
     }
+
+        console.log(`You chose ${process.argv[2].toLowerCase()} and Computer chose ${computerChoice}. The result is: ${result}`) 
 
