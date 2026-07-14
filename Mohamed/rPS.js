@@ -18,20 +18,20 @@ if (
   return;
 }
 
-const randomIndex = Math.floor(Math.random() * options.length);
-const computerChoice = options[randomIndex];
+const randomX = Math.floor(Math.random() * options.length);
+const pcOutput = options[randomX];
 
-console.log(`You chose: ${userInput} and Computer chose: ${computerChoice}`);
+console.log(`You chose: ${userInput} and Computer chose: ${pcOutput}`);
 
-if (userInput.toUpperCase() === computerChoice.toUpperCase()) {
+if (userInput.toUpperCase() === pcOutput.toUpperCase()) {
   console.log("It's a tie!");
 } else if (
   (userInput.toUpperCase() === "R" &&
-    computerChoice.toUpperCase() === "S") ||
+    pcOutput.toUpperCase() === "S") ||
   (userInput.toUpperCase() === "P" &&
-    computerChoice.toUpperCase() === "R") ||
+    pcOutput.toUpperCase() === "R") ||
   (userInput.toUpperCase() === "S" &&
-    computerChoice.toUpperCase() === "P")
+    pcOutput.toUpperCase() === "P")
 ) {
   console.log("You win!");
 } else {
