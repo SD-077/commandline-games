@@ -13,16 +13,14 @@ for (const word of userInputPhrase) {
     !vowels.some((vowel) => word[1] === vowel)
   ) {
     if (word[0] === word[0].toUpperCase()) {
-      translatedWord = translateAndCapitalize(word, 2);
-      +"ay";
+      translatedWord = translateAndCapitalize(word, 2) + "ay";
     } else {
       translatedWord = word.slice(2) + word.slice(0, 2) + "ay";
     }
     translatedPhrase.push(translatedWord);
   } else {
     if (word[0] === word[0].toUpperCase()) {
-      translatedWord = translateAndCapitalize(word, 1);
-      +"ay";
+      translatedWord = translateAndCapitalize(word, 1) + "ay";
     } else {
       translatedWord = word.slice(1) + word[0] + "ay";
     }
